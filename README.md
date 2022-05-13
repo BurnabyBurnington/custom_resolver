@@ -1,3 +1,13 @@
+https://groups.google.com/u/1/g/usd-interest/c/Q6mdoczg_uo/m/1YAr2iIfGAAJ
+export TF_DEBUG='*'
+
+```bash
+PXR_PLUGINPATH_NAME=$PWD/project/build/install/resources usdresolve Table  # Should show "./Table/Table.usda"
+PXR_PLUGINPATH_NAME=$PWD/project/build/install/resources usdchecker regular_resolve_test/main.usda  # Check for common Pcp issues
+PXR_PLUGINPATH_NAME=$PWD/project/build/install/resources usdcat --flatten regular_resolve_test/main.usda  # Make sure references flatten
+PXR_PLUGINPATH_NAME=$PWD/project/build/install/resources usdview regular_resolve_test/main.usda  # View the chair / table
+```
+
 This project shows how to create a custom C++ / Python asset resolver,
 in USD.
 
